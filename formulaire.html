@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Les formulaires en html</title>
+</head>
+<body>
+	<fieldset>
+
+		<legend align="center">Formulaire d'inscription</legend>
+
+		<form action="">
+			<label for="">Prénom</label>
+			<input type="text" id="prenom" readonly value="Bassirou" placeholder="Veuillez entrer votre prénom" maxlength="5"> <br><br>
+			<label for="nom">Nom</label>
+			<input type="text" id="nom" required> <br><br>
+			<label for="">Prix</label>
+			<input type="number" name="prix" step="5"  min="5" max="100"> <br><br>
+			
+			<label for="">Sexe</label><br>
+			M <input type="radio" name="sexe" value="Masculin" checked>
+			F <input type="radio" value="Feminin" name="sexe"><br><br>
+
+			<label for="">Langue</label><br>
+			Français <input type="checkbox" name="langue[]">
+			Anglais <input type="checkbox" name="langue[]">
+			Chinois <input type="checkbox" name="langue[]">
+			Italien <input type="checkbox" name="langue[]" checked><br> <br>
+
+			<label for="">Pays</label>
+			<select name="" id="">
+				<option value="">Veuillez selection un pays</option>
+				<option value="Senegal">Senegal</option>
+				<option value="Mali">Mali</option>
+				<option value="Gambie">Gambie</option>
+			</select><br><br>
+			<label for="">Selectionner votre image</label>
+			<input type="file"><br>
+			<label for="">Email</label>
+			<input type="email"><br><br>
+			<label for="">Mot de passe</label>
+			<input type="password"><br>
+			<label for="">Couleur</label><br>
+			<input type="color"><br>
+			<label for="">Temps</label>
+			<input type="time"><br>
+			<label for="">Date de naissance</label>
+			<input type="date"><br>
+			<label for="">Date d'inscription</label>
+			<input type="datetime-local"><br><label for="">Plage</label>
+			<input type="range" id="plage"> <br>
+			<label for="">Description</label><br>
+			<textarea name="" rows="10" cols="50" id=""></textarea><br>
+			<input type="submit" value="S'inscrire">
+		</form>
+	</fieldset>
+
+</body>
+</html>

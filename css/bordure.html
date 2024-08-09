@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#bouton{
+/*			border: 10px outset #0eea6b;*/
+			width: 150px;
+			text-align: center;
+			box-shadow: 2px 2px 5px black, inset -2px -2px 5px black;
+			border-radius: 10px 20px 0px 50px;
+			border-left: 10px double green;
+			cursor: pointer;
+		}
+
+		#bouton:hover{
+			background: cyan;
+			transition: 6s;
+			transform: rotate(-360deg);
+			border-left: none;
+		}
+		#cercle{
+			width: 50px;
+			height: 50px;
+			margin-top: 50px;
+			border-radius: 50%;
+			box-shadow: 2px 2px 2px grey;
+		}
+	</style>
+</head>
+<body>
+	<div id="bouton">
+		Cliquez moi
+	</div>
+
+	<div id="cercle"></div>
+</body>
+</html>
