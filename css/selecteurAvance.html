@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les selecteurs avancés en Css</title>
+
+    <style>
+        div p{
+            color: green;
+        }
+
+        h1, #para2{
+            color: blueviolet;
+        }
+        
+        input[type="text"], input[type="email"], input[type="password"]{
+            width: 400px;
+            outline: none;
+            border-width: 3px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        input[type="submit"]{
+            border: none;
+            border-radius: 10px;
+            height: 30px;
+            box-shadow: 2px 2px 3px green;
+            cursor: pointer;
+            font-family: Algerian;
+        }
+
+        input[type="submit"]:hover{
+            background: green;
+            box-shadow: 2px 2px 3px black;
+            color: white;
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1>La premiere division</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quaerat quas modi, facilis labore, dolorum fugit distinctio unde consequatur molestiae odio excepturi eligendi
+            omnis nam aut aperiam. Ullam, cumqu repudiandae.
+        </p>
+    </div>
+
+    <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempora repudiandae quis? Facilis quidem voluptatibus dolore. Sunt enim similique eius alias laudantium possimus reprehenderit veniam, ipsum natus culpa totam nobis!</p>
+
+    <form action="">
+        <label for="">Prenom</label>
+        <input type="text"><br><br>
+        <label for="">Nom</label>
+        <input type="text"><br><br>
+        <label for="">Email</label>
+        <input type="email"><br><br>
+        <label for="">Mot de passe</label>
+        <input type="password"><br><br>
+        <input type="submit" value="S'inscrire">
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#clic{
+			width: 150px;
+			text-align: center;
+			border-radius: 10px 20px 0px 40px;
+			border-left: 10px double green;
+			box-shadow: 2px 2px 5px black, inset -2px -2px 5px black;
+			cursor: pointer;
+
+		}
+
+		#clic:hover{
+			border-left: none;
+			background: cyan;
+			transition: 4s;
+			transform: rotate(-360deg);
+		}
+
+		#cercle{
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			box-shadow: 1px 1px 1px grey;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="clic">Cliquez moi</div>
+	<div id="cercle"></div>
+</body>
+</html>
