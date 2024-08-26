@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #029292;
+        }
+
+        #global{
+            width: 600px;
+            height: 450px;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 4px 4px 5px grey, -4px -4px 5px grey;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #letf-part{
+            height: 450px;
+        }
+
+        #letf-part #text {
+            border: 5px solid #fff;
+            width: 70%;
+            color: white;
+            text-align: center;
+            margin: auto;
+            transform: translateY(100%);
+        }
+        #right-part{
+            height: 450px;
+            background: #001f3e;
+        }
+
+        #right-part #btn-group{
+            float: right;
+            margin: 15px 10px;
+        }
+
+        #right-part #btn-group .login{
+            text-decoration: none;
+            border-radius: 15px 0px 0px 15px;
+            color: white;
+            background: #029292;
+            padding: 5px;
+            text-align: center;
+        }
+
+        #right-part #btn-group .register{
+            text-decoration: none;
+            border-radius: 0px 15px 15px 0px ;
+            color: white;
+            background: #423f3b;
+            padding: 5px;
+            text-align: center;
+        }
+
+        #right-part .form-part{
+            width: 80%;
+            height: 80%;
+            margin: auto;
+            transform: translateY(12%);
+            background: #092652;
+            text-align: center;
+            color: white;
+        }
+
+        #right-part .form-part h1{
+            text-align: center!important;
+            margin: auto;
+        }
+
+        #right-part .form-part form{
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 10px;
+            row-gap: 15px;
+        }
+
+        #right-part .form-part form input{
+            outline: none;
+            padding: 4px;
+            border-radius: 0px;
+            border: none;
+        }
+
+        #right-part .form-part form .lien{
+            color: white;
+            text-align: right;
+            text-decoration: none;
+        }
+
+        #right-part .form-part form button{
+            background: #029292;
+            color: white;
+            border: none;
+            padding: 4px;
+        }
+
+
+        #right-part .form-part .images img{
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="global">
+        <div id="letf-part">
+            <div id="text">
+                <h3>Welcome to logo</h3>
+                <p>Lorem ipsum dolor sit, 
+                    amet consectetur adipisicing elit. Consequuntur ducimus tenetur 
+                    natus!</p>
+            </div>
+        </div>
+        <div id="right-part">
+            <div id="btn-group">
+                <a href="" class="login">Login</a>
+                <a href="" class="register">Register</a>
+            </div>
+            <div class="form-part">
+                <h1 style="text-align: center;">Logo</h1>
+                <p>Sign in into your account</p>
+                <form action="">
+                    <input type="email" placeholder="Email Adress">
+                    <input type="password" placeholder="Password">
+                    <a href="" class="lien">forget your password</a>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="images">
+                    <img src="../../images/facebook.png" alt="">
+                    <img src="../../images/twitter.png" alt="">
+                    <img src="../../images/google.png" alt="">
+                    <img src="../../images/linkedin.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- <img src="../../images/exo4.jpeg" alt=""> -->
+    </div>
+</body>
+</html>
