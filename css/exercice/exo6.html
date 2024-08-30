@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            overflow: hidden;
+            width: 100vw;
+        }
+        nav{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 3px 3px 3px grey;
+            background: white;
+
+        }
+        .logo{
+            line-height: 45px;
+            margin-left: 20px;
+            font-size: 50px;
+
+        }
+        ul{
+            list-style-type: none;
+            line-height: 25px;
+        }
+        li{
+            width: 150px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .navbar{
+            display: flex;
+            margin-right: 10px;
+            
+        }
+
+        li ul{
+            margin-left: -40px;
+            background: #e9e9e9;
+            visibility: hidden;
+
+        }
+
+        li:hover {
+            background: #a56565;
+        }
+
+        li:hover ul{
+            visibility: visible;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Logo</div>
+        <ul class="navbar">
+            <li><a href="">Accueil</a></li>
+            <li>
+                <a href="">Formations</a>
+                <ul>
+                    <li><a href="">Bureautique</a></li>
+                    <li><a href="">Dev Web</a></li>
+                    <li><a href="">IA</a></li>
+                    <li><a href="">Reseaux</a></li>
+                </ul>
+            </li>
+            <li><a href="">Competences</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
