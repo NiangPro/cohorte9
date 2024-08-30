@@ -11,7 +11,7 @@
 
         #global{
             width: 600px;
-            height: 450px;
+            height: 420px;
             margin: auto;
             margin-top: 50px;
             box-shadow: 4px 4px 5px grey, -4px -4px 5px grey;
@@ -29,10 +29,10 @@
             color: white;
             text-align: center;
             margin: auto;
-            transform: translateY(100%);
+            transform: translateY(90%);
         }
         #right-part{
-            height: 450px;
+            height: 420px;
             background: #001f3e;
         }
 
@@ -61,17 +61,20 @@
 
         #right-part .form-part{
             width: 80%;
-            height: 80%;
+            height: 75%;
             margin: auto;
             transform: translateY(12%);
             background: #092652;
             text-align: center;
             color: white;
+            margin-top: 10px;
         }
 
-        #right-part .form-part h1{
-            text-align: center!important;
+        #right-part .form-part .logo{
+            text-align: center;
+            width: 80px;
             margin: auto;
+            font-size: 25px;
         }
 
         #right-part .form-part form{
@@ -100,10 +103,29 @@
             border: none;
             padding: 4px;
         }
-
+        #right-part .form-part .images{
+            margin-top: 10px;
+        }
 
         #right-part .form-part .images img{
             width: 30px;
+        }
+        .tiret{
+            border: 1px solid #fff;
+            width: 90%;
+            margin: auto;
+            margin-top: 10px;
+        }
+        .or{
+            margin: auto;
+            margin-top: -10px;
+            background: #092652;
+            width: 30px;
+        }
+        .author{
+            color: white;
+            margin-top: 60px;
+            text-align: center;
         }
     </style>
 </head>
@@ -123,7 +145,7 @@
                 <a href="" class="register">Register</a>
             </div>
             <div class="form-part">
-                <h1 style="text-align: center;">Logo</h1>
+                <div class="logo">Logo</div>
                 <p>Sign in into your account</p>
                 <form action="">
                     <input type="email" placeholder="Email Adress">
@@ -131,6 +153,8 @@
                     <a href="" class="lien">forget your password</a>
                     <button type="submit">Login</button>
                 </form>
+                <div class="tiret"></div>
+                <div class="or">Or</div>
                 <div class="images">
                     <img src="../../images/facebook.png" alt="">
                     <img src="../../images/twitter.png" alt="">
@@ -138,8 +162,8 @@
                     <img src="../../images/linkedin.png" alt="">
                 </div>
             </div>
+            <div class="author">Developed by Cohorte 9</div>
         </div>
-        <!-- <img src="../../images/exo4.jpeg" alt=""> -->
     </div>
 </body>
 </html>
